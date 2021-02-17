@@ -1,0 +1,20 @@
+Upgrad Hackathon - Credit Prediction
+Feb 2020
+
+The purpose of the Hackathon was to be able to predict the credit amount given a set of features like Account information, Loan duration, Purpose of load, Credit amount, Kind of propery owned, Employment status, Residential status, etc.
+
+Exploratory data analysis and subsequent data cleaning was done.
+Univariate and Bivariate Segmented analysis revealed how some of the features affected the credit amount in the Bar Graphs and Pait Plots created.
+Data cleaning and data processing was done. Dummy variables were created for the categorical features.
+
+A heat map showed no correlation among the features and hence PCA was not done to reduce the dimensionality as this could lead to information loss.
+
+A Random forest regressor and an Artificial Neural Network have been tried out as the models for prediction. The standard scaling was used for the data.
+
+In the Random Forest Regressor, a grid search with a set of hyper-parameters was executed to get the optimal set of hyper-parameters.
+Hyper-parameters selected were number of trees, maximum features to be selected in each sample in the ensemble, maximum depth and maximum samples in leaf nodes.
+
+The Neural network architecture consisted of 7 Dense layers - 64-32-32-32-32-16-1
+For handling overfitting, 3 Drop out layers and L1_L2 regularizers were used. Loss function used was the Root Mean Squared Error
+
+The performance metric was Normalized Root Mean Square Error which came out as 97.6%
